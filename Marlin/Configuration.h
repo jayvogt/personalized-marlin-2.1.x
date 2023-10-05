@@ -681,11 +681,11 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    // Ender 3 v2 (Updated 2023-08-17)
+    // Ender 3 v2 (Updated 2023-10-04)
     // Minimus Cooler, 4020 hotend fan, 1x 4010 part cooling fan
-    #define DEFAULT_Kp  23.80
-    #define DEFAULT_Ki   1.88
-    #define DEFAULT_Kd  75.19
+    #define DEFAULT_Kp 25.07
+    #define DEFAULT_Ki 2.05
+    #define DEFAULT_Kd 76.72
   #endif
 #else
   #define BANG_MAX 255    // Limit hotend current while in bang-bang mode; 255=full current
@@ -774,11 +774,11 @@
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
 
-  // Ender-3 V2 (Updated 2023-08-17)
+  // Ender-3 V2 (Updated 2023-10-04)
   // Glass bed, adhesive insulation
-  #define DEFAULT_bedKp 99.91
-  #define DEFAULT_bedKi 19.21
-  #define DEFAULT_bedKd 346.37
+  #define DEFAULT_bedKp 108.50
+  #define DEFAULT_bedKi 20.24
+  #define DEFAULT_bedKd 387.70
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #else
@@ -1229,7 +1229,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 97.41255 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 95.875 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
