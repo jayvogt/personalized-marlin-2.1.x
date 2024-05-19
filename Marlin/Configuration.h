@@ -116,7 +116,7 @@
 //#define BLUETOOTH
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "MP Porta Printer"
+#define CUSTOM_MACHINE_NAME "PortaPrinter"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -689,11 +689,11 @@
     #define DEFAULT_Ki_LIST {   2.62,   2.62 }
     #define DEFAULT_Kd_LIST {  78.81,  78.81 }
   #else
-    // MP Porta Printer (Updated 2023-10-03)
-    // Stock cooler, 30mm fan
-    #define DEFAULT_Kp  12.17
-    #define DEFAULT_Ki   0.69
-    #define DEFAULT_Kd  53.78
+    // MP Porta Printer (Updated 2024-05-13)
+    // Stock cooler, 30mm fan, 240C
+    #define DEFAULT_Kp 18.29
+    #define DEFAULT_Ki 1.14
+    #define DEFAULT_Kd 73.15
   #endif
 #else
   #define BANG_MAX 255    // Limit hotend current while in bang-bang mode; 255=full current
@@ -779,11 +779,11 @@
   //#define MIN_BED_POWER 0
   //#define PID_BED_DEBUG // Print Bed PID debug data to the serial port.
 
-  // MP Porta Printer (Updated 2024-10-03)
-  // Stock bed with painter's tape, adhesive insulation
-  #define DEFAULT_bedKp 65.82
-  #define DEFAULT_bedKi 12.85
-  #define DEFAULT_bedKd 224.70
+  // MP Porta Printer (Updated 2024-05-13)
+  // Stock bed with painter's tape, adhesive insulation, 80C
+  #define DEFAULT_bedKp 116.95
+  #define DEFAULT_bedKi 21.51
+  #define DEFAULT_bedKd 423.98
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #else
@@ -1238,7 +1238,7 @@
  * Override with M92 (when enabled below)
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 93, 93, 1097.5, 100 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 93, 93, 1097.5, 101.52 }
 
 /**
  * Enable support for M92. Disable to save at least ~530 bytes of flash.
@@ -1292,8 +1292,8 @@
  */
 #define CLASSIC_JERK
 #if ENABLED(CLASSIC_JERK)
-  #define DEFAULT_XJERK 10.0
-  #define DEFAULT_YJERK 10.0
+  #define DEFAULT_XJERK 27.0
+  #define DEFAULT_YJERK 17.0
   #define DEFAULT_ZJERK  0.3
   #define DEFAULT_EJERK  5.0
   //#define DEFAULT_IJERK  0.3
