@@ -3033,6 +3033,7 @@
 // https://github.com/bigtreetech/MINI-12864
 //
 #define BTT_MINI_12864
+#define NO_CONTROLLER_CUSTOM_WIRING_WARNING
 
 //
 // BEEZ MINI 12864 is an alias for FYSETC_MINI_12864_2_1. Type A/B. NeoPixel RGB Backlight.
