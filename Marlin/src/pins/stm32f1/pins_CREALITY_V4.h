@@ -156,12 +156,12 @@
 #ifndef HEATER_BED_PIN
   #define HEATER_BED_PIN                    PA2   // HOT BED
 #endif
-//#ifndef FAN0_PIN
-//  #define FAN0_PIN                          PA0   // FAN
-//#endif
-#ifndef FAN1_PIN
-  #define FAN1_PIN                          PA0   // Assign PA0 to non-default pin so it can be assigned to E0_AUTO_FAN_PIN
+#ifndef FAN0_PIN
+  #define FAN0_PIN                          PA0   // FAN
 #endif
+//#ifndef FAN1_PIN
+//  #define FAN1_PIN                          PA0   // Assign PA0 to non-default pin so it can be assigned to E0_AUTO_FAN_PIN
+//#endif
 #define FAN_SOFT_PWM_REQUIRED
 
 //
