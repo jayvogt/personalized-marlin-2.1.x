@@ -689,11 +689,11 @@
     #define DEFAULT_Ki_LIST {   2.62,   2.62 }
     #define DEFAULT_Kd_LIST {  78.81,  78.81 }
   #else
-    // MP Porta Printer (Updated 2024-05-13)
-    // Stock cooler, 30mm fan, 240C
-    #define DEFAULT_Kp 18.29
-    #define DEFAULT_Ki 1.14
-    #define DEFAULT_Kd 73.15
+    // MP Porta Printer (Updated 2024-07-06)
+    // Part Cooling Fan, 30mm fan, 225C
+    #define DEFAULT_Kp 16.81
+    #define DEFAULT_Ki 0.90
+    #define DEFAULT_Kd 78.33
   #endif
 #else
   #define BANG_MAX 255    // Limit hotend current while in bang-bang mode; 255=full current
