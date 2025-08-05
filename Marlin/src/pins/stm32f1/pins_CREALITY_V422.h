@@ -30,4 +30,9 @@
 
 #define EMIT_CREALITY_422_WARNING
 
+/**
+ * Add configuration options for custom FYSETC Mini 12864 LCD
+*/
+#define RET6_12864_LCD
+
 #include "pins_CREALITY_V4.h"
